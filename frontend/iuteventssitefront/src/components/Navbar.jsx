@@ -52,26 +52,31 @@ export default function Navbar({ user, onLogout, onNavigate }) {
                 {/* ── LOGO ── */}
                 <div
                     onClick={() => handleNavigate('')}
-                    style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
+                    style={{ display: 'flex', alignItems: 'center', gap: '14px', cursor: 'pointer' }}
                 >
+                    {/* Badge blanc avec halo doré */}
                     <div style={{
-    backgroundColor: '#ffffff',
-    padding: '4px',
-    borderRadius: '6px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-}}>
-    <img
-        src="/logo.png"
-        alt="Logo Université Gustave Eiffel"
-        style={{
-            height: '32px',
-            width: 'auto',
-            objectFit: 'contain'
-        }}
-    />
-</div>
+                        backgroundColor: '#ffffff',
+                        padding: '6px 12px',
+                        borderRadius: '8px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 0 12px rgba(212, 184, 118, 0.6)',
+                        border: '2px solid #d4b876'
+                    }}>
+                        <img
+                            src="/logo.png"
+                            alt="Logo Gustave Eiffel"
+                            style={{
+                                height: '34px',
+                                width: 'auto',
+                                display: 'block',
+                                objectFit: 'contain'
+                            }}
+                        />
+                    </div>
+
                     <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
                         <span className="font-display" style={{ fontSize: '1.15rem', fontWeight: 600, letterSpacing: '0.01em' }}>
                             IUT Gustave Eiffel
